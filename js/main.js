@@ -36,8 +36,8 @@ const translations = {
     'offre.fractional.title':     'Fractional Head of HR',
     'offre.fractional.body':      'Un rôle RH stratégique à temps partagé, pour les organisations sans VP RH à temps plein.',
 
-    'contact.title': 'Travaillons ensemble',
-    'contact.sub':   'Une conversation sans pression. Parlez-moi de votre besoin et on voit ensemble comment je peux aider.',
+    'contact.title': 'Collaborons',
+    'contact.sub':   'Parlez-moi brièvement de votre besoin ou projet — j\'aurai ce qu\'il faut pour préparer notre premier appel.',
     'contact.cta':   'Écrire à hello@emiliefaubert.com',
     'contact.book':  'Réservez un créneau',
 
@@ -80,8 +80,8 @@ const translations = {
     'offre.fractional.title':     'Fractional Head of HR',
     'offre.fractional.body':      'A strategic, part-time HR role for organizations without a full-time VP of HR.',
 
-    'contact.title': 'Let\'s work together',
-    'contact.sub':   'A no-pressure conversation. Tell me about your need and we\'ll figure out together how I can help.',
+    'contact.title': 'Let\'s collaborate',
+    'contact.sub':   'Tell me briefly about your need or project — I\'ll have what I need to prepare our first call.',
     'contact.cta':   'Write to hello@emiliefaubert.com',
     'contact.book':  'Book a time slot',
 
