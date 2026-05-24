@@ -102,9 +102,40 @@ assets/img/         logos et images
 
 ---
 
+## Brief du site (notes d'Émilie — Google Doc « SITE WEB 2026 »)
+
+> Doc : https://docs.google.com/document/d/1zTuCX2Nrz5ie4fctDHjSx4IPbnMZb9F2Bg9suH5NmKM
+
+- **Domaine** : `www.emiliefaubert.com`
+- **Courriel** : `hello@emiliefaubert.com`
+
+### Esprit du contenu
+- Simple et direct — **peu de texte**, rien de long à lire.
+- Trouver vite **comment et où la joindre**.
+- 1–2 photos pro d'elle + **photos de nature** (arbres, fleurs) — douceur, calme, mais aussi énergie.
+
+### Sections (ordre proposé par Émilie)
+1. **Accueil** — résumé de chaque section + son *motto*.
+2. **Mon parcours & expérience**.
+3. **Mes valeurs + pourquoi je fais ce métier + comment je travaille**.
+4. **Mon offre / mon expertise**.
+5. **(Éventuellement)** liste de projets / clients.
+6. **Me contacter**.
+
+### Fonctionnalités attendues
+- **Formulaire de contact** relié à `hello@emiliefaubert.com`.
+- Champ pour que le client **décrive brièvement son besoin/projet** (matière pour un 1er appel).
+- **Booking calendrier** en option (test — à retirer si « trop random »). → backend/intégration à déterminer.
+- Lien **LinkedIn**.
+- **Numéro de téléphone**.
+
+---
+
 ## État du repo & prochaines étapes
 
 - Repo `website-emiliefaubert` : quasi vide (README + ce CONTEXT.md). Site **à démarrer**.
-- **Sections à définir/valider avant de coder.**
+- Sections définies par Émilie (ci-dessus) — reste à valider le wording final et le contenu détaillé.
+- À trancher : mécanisme du formulaire (statique → service tiers type Formspree, ou backend) et
+  l'outil de booking (Calendly / Cal.com / autre).
 - TODO pré-déploiement : la fleur est embarquée en base64 dans le branding (workaround `file://`) ;
   au déploiement HTTP, repasser à `mask-image: url('assets/img/flower-extracted.png')`.
