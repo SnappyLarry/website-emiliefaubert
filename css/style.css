@@ -251,6 +251,30 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .section { padding-block: clamp(3.5rem, 10vw, 7rem); }
 .section--alt { background: rgba(169, 181, 160, .16); }
 
+/* ── Sections sombres (fond Conifère, texte clair) — réutilisable ── */
+.section--dark,
+.section--contact {
+  background: var(--conifere);
+  color: var(--cream);
+}
+.section--dark .section__title,
+.section--contact .section__title,
+.section--dark .prose__lead {
+  color: var(--cream);
+}
+.section--dark .section__num,
+.section--contact .section__num {
+  color: var(--framboise);
+}
+.section--dark .pillar__title,
+.section--dark .card__title {
+  color: var(--cream);
+}
+.section--dark .card {
+  background: transparent;
+  border-color: rgba(248, 244, 237, .25);
+}
+
 .section__header {
   display: flex;
   align-items: baseline;
@@ -337,13 +361,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .card__body { font-size: .95rem; font-weight: 300; }
 
 /* ── Contact ───────────────────────────────────────── */
-.section--contact {
-  background: var(--conifere);
-  color: var(--cream);
-}
-.section--contact .section__title,
-.section--contact .prose__lead { color: var(--cream); }
-.section--contact .section__num { color: var(--framboise); }
+/* Base sombre (fond/texte/titre/num) gérée par `.section--dark, .section--contact` plus haut. */
 .contact__sub {
   font-size: clamp(1.05rem, 3vw, 1.25rem);
   font-weight: 300;
