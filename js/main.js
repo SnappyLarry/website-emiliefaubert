@@ -9,7 +9,7 @@ const translations = {
     'hero.title': 'Ce qu\'on fait<br>ensemble.',
     'hero.sub':   'Aligner vos ambitions d\'affaires avec des équipes engagées et une culture forte.',
     'hero.scope': 'Industries créatives et technologiques.',
-    'hero.cta':   'Travaillons ensemble',
+    'hero.cta':   'Collaborons',
 
     'parcours.title': 'Parcours & expérience',
     'parcours.lead':  '15+ ans en ressources humaines dans des environnements créatifs et technologiques à forte croissance, dont plus de 10 ans chez Moment Factory.',
@@ -53,7 +53,7 @@ const translations = {
     'hero.title': 'What we build<br>together.',
     'hero.sub':   'Aligning your business ambitions with engaged teams and a strong culture.',
     'hero.scope': 'Creative and technology industries.',
-    'hero.cta':   'Let\'s work together',
+    'hero.cta':   'Let\'s collaborate',
 
     'parcours.title': 'Background & experience',
     'parcours.lead':  '15+ years in HR within fast-growing creative and technology environments, including 10+ years at Moment Factory.',
