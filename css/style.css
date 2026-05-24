@@ -55,6 +55,17 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   color: var(--conifere);
   transform: translateY(-1px);
 }
+/* Sur fond foncé (hero + contact) : bouton Framboise, hover crème */
+.hero .btn--primary,
+.section--contact .btn--primary {
+  background: var(--framboise);
+  color: var(--conifere);
+}
+.hero .btn--primary:hover,
+.section--contact .btn--primary:hover {
+  background: var(--cream);
+  color: var(--conifere);
+}
 
 /* ── Logo (wordmark É[fleur]F, cadre ouvert) ───────── */
 .logo { display: inline-flex; align-items: center; color: var(--conifere); }
@@ -108,6 +119,11 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 }
 .nav .logo__mark { font-size: 1.3rem; }
 
+/* Couleur nav : claire au-dessus du hero, foncée une fois scrollé / menu ouvert */
+.nav .logo { color: var(--cream); }
+.nav.scrolled .logo,
+.nav.menu-open .logo { color: var(--conifere); }
+
 .nav__links {
   display: flex;
   align-items: center;
@@ -116,23 +132,27 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .nav__links a {
   font-size: .9rem;
   font-weight: 500;
-  color: var(--conifere);
+  color: var(--cream);
   letter-spacing: .02em;
   transition: color .2s;
 }
+.nav.scrolled .nav__links a,
+.nav.menu-open .nav__links a { color: var(--conifere); }
 .nav__links a:hover { color: var(--framboise); }
 
 .lang-toggle {
   font-size: .78rem;
   font-weight: 500;
-  color: var(--conifere);
+  color: var(--cream);
   letter-spacing: .08em;
-  border: 1px solid var(--conifere);
+  border: 1px solid var(--cream);
   padding: .28rem .6rem;
   border-radius: 2px;
-  transition: background .2s, color .2s;
+  transition: background .2s, color .2s, border-color .2s;
 }
-.lang-toggle:hover { background: var(--conifere); color: var(--cream); }
+.nav.scrolled .lang-toggle,
+.nav.menu-open .lang-toggle { color: var(--conifere); border-color: var(--conifere); }
+.lang-toggle:hover { background: var(--framboise); color: var(--conifere); border-color: var(--framboise); }
 
 /* Burger */
 .nav__burger {
@@ -145,10 +165,12 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   display: block;
   width: 22px;
   height: 2px;
-  background: var(--conifere);
+  background: var(--cream);
   border-radius: 2px;
-  transition: transform .25s, opacity .25s;
+  transition: transform .25s, opacity .25s, background .2s;
 }
+.nav.scrolled .nav__burger span,
+.nav.menu-open .nav__burger span { background: var(--conifere); }
 .nav__burger[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .nav__burger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
 .nav__burger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
@@ -187,6 +209,8 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   display: flex;
   align-items: center;
   padding-block: calc(var(--nav-h) + 2rem) 3rem;
+  background: var(--conifere);
+  color: var(--cream);
 }
 .hero__content {
   display: flex;
@@ -208,18 +232,18 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   font-weight: 500;
   line-height: 1.02;
   letter-spacing: -.01em;
-  color: var(--conifere);
+  color: var(--cream);
 }
 .hero__sub {
   font-size: clamp(1.1rem, 3.5vw, 1.4rem);
   font-weight: 300;
-  color: var(--ardoise);
+  color: var(--cream);
   max-width: 46ch;
 }
 .hero__scope {
   font-size: 1rem;
   font-weight: 500;
-  color: var(--conifere);
+  color: var(--cream);
 }
 .hero .btn { margin-top: .5rem; }
 
