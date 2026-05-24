@@ -368,56 +368,23 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   max-width: 52ch;
   margin-bottom: clamp(2rem, 5vw, 3rem);
 }
-.contact__grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: clamp(2rem, 6vw, 3.5rem);
-}
 
-/* Form */
-.contact__form { display: flex; flex-direction: column; gap: 1.1rem; }
-.field { display: flex; flex-direction: column; gap: .4rem; }
-.field__label {
-  font-size: .82rem;
-  font-weight: 500;
-  letter-spacing: .04em;
-  text-transform: uppercase;
-  color: var(--lichen);
+/* Liens directs sous le bouton (LinkedIn, téléphone, booking) */
+.contact__direct {
+  display: flex;
+  flex-direction: column;
+  gap: .9rem;
+  margin-top: 2.5rem;
 }
-.field input,
-.field textarea {
-  font-family: var(--ff-body);
-  font-size: 1rem;
-  color: var(--cream);
-  background: rgba(248, 244, 237, .06);
-  border: 1px solid rgba(248, 244, 237, .25);
-  border-radius: 3px;
-  padding: .7rem .85rem;
-  transition: border-color .2s, background .2s;
-}
-.field input:focus,
-.field textarea:focus {
-  outline: none;
-  border-color: var(--framboise);
-  background: rgba(248, 244, 237, .1);
-}
-.field textarea { resize: vertical; }
-.contact__form .btn { align-self: flex-start; margin-top: .25rem; }
-
-/* Coordonnées directes */
-.contact__direct { display: flex; flex-direction: column; gap: 1.1rem; }
 .contact__link {
-  font-size: 1.1rem;
-  font-weight: 400;
+  font-size: 1.05rem;
   color: var(--cream);
   width: fit-content;
   border-bottom: 1px solid rgba(250, 96, 141, .5);
-  padding-bottom: .15rem;
+  padding-bottom: .12rem;
   transition: color .2s, border-color .2s;
 }
 .contact__link:hover { color: var(--framboise); border-color: var(--framboise); }
-.contact__book { font-size: .95rem; font-weight: 300; color: var(--lichen); margin-top: .5rem; }
-.contact__book a { color: var(--framboise); border-bottom: 1px solid currentColor; }
 
 /* ── Footer ────────────────────────────────────────── */
 .footer { border-top: 1px solid rgba(45, 76, 58, .15); padding-block: 2rem; }
@@ -457,7 +424,6 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 
   .pillars { grid-template-columns: repeat(3, 1fr); }
   .cards   { grid-template-columns: repeat(2, 1fr); }
-  .contact__grid { grid-template-columns: 1.3fr 1fr; align-items: start; }
 }
 
 @media (min-width: 1000px) {

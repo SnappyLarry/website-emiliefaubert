@@ -37,13 +37,9 @@ const translations = {
     'offre.fractional.body':      'Un rôle RH stratégique à temps partagé, pour les organisations sans VP RH à temps plein.',
 
     'contact.title': 'Travaillons ensemble',
-    'contact.sub':   'Parlez-moi brièvement de votre besoin et de votre projet — j\'aurai de quoi préparer notre premier appel.',
-    'contact.form.name':    'Nom',
-    'contact.form.email':   'Courriel',
-    'contact.form.message': 'Votre besoin / projet',
-    'contact.form.submit':  'Envoyer',
-    'contact.phone': '+1 (000) 000-0000',
-    'contact.book':  'Vous préférez réserver directement ? <a href="#">Choisir un créneau</a>',
+    'contact.sub':   'Une conversation sans pression. Parlez-moi de votre besoin et on voit ensemble comment je peux aider.',
+    'contact.cta':   'Écrire à hello@emiliefaubert.com',
+    'contact.book':  'Réservez un créneau',
 
     'footer.copy': '© 2026 Émilie Faubert. Tous droits réservés.',
   },
@@ -85,13 +81,9 @@ const translations = {
     'offre.fractional.body':      'A strategic, part-time HR role for organizations without a full-time VP of HR.',
 
     'contact.title': 'Let\'s work together',
-    'contact.sub':   'Tell me briefly about your need and your project — I\'ll have what I need to prepare our first call.',
-    'contact.form.name':    'Name',
-    'contact.form.email':   'Email',
-    'contact.form.message': 'Your need / project',
-    'contact.form.submit':  'Send',
-    'contact.phone': '+1 (000) 000-0000',
-    'contact.book':  'Prefer to book directly? <a href="#">Pick a time slot</a>',
+    'contact.sub':   'A no-pressure conversation. Tell me about your need and we\'ll figure out together how I can help.',
+    'contact.cta':   'Write to hello@emiliefaubert.com',
+    'contact.book':  'Book a time slot',
 
     'footer.copy': '© 2026 Émilie Faubert. All rights reserved.',
   }
