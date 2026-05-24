@@ -7,7 +7,8 @@ const translations = {
 
     'hero.label': 'Coaching exécutif · Conseil RH stratégique',
     'hero.title': 'Ce qu\'on fait<br>ensemble.',
-    'hero.sub':   'Une partenaire pour les leaders d\'industries créatives et technologiques.',
+    'hero.sub':   'Aligner vos ambitions d\'affaires avec des équipes engagées et une culture forte.',
+    'hero.scope': 'Industries créatives et technologiques.',
     'hero.cta':   'Travaillons ensemble',
 
     'parcours.title': 'Parcours & expérience',
@@ -54,7 +55,8 @@ const translations = {
 
     'hero.label': 'Executive coaching · Strategic HR consulting',
     'hero.title': 'What we build<br>together.',
-    'hero.sub':   'A partner for leaders in creative and technology industries.',
+    'hero.sub':   'Aligning your business ambitions with engaged teams and a strong culture.',
+    'hero.scope': 'Creative and technology industries.',
     'hero.cta':   'Let\'s work together',
 
     'parcours.title': 'Background & experience',
