@@ -262,6 +262,10 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .section--dark .card__title {
   color: var(--cream);
 }
+.section--dark .section__motto,
+.section--contact .section__motto {
+  color: var(--cream);
+}
 .section--dark .card {
   background: transparent;
   border-color: rgba(248, 244, 237, .25);
@@ -280,6 +284,18 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   color: var(--framboise);
   flex-shrink: 0;
 }
+.section__flower {
+  display: inline-block;
+  width: .85rem;
+  height: 1.55rem;
+  flex-shrink: 0;
+  align-self: center;
+  background-color: var(--framboise);
+  -webkit-mask: url('../assets/img/flower.png') center / contain no-repeat;
+          mask: url('../assets/img/flower.png') center / contain no-repeat;
+  -webkit-mask-mode: alpha;
+          mask-mode: alpha;
+}
 .section__title {
   font-family: var(--ff-title);
   font-size: clamp(2rem, 6vw, 3rem);
@@ -288,6 +304,15 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   letter-spacing: -.01em;
   color: var(--conifere);
 }
+.section__motto {
+  font-family: var(--ff-title);
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--conifere);
+  margin-bottom: 1rem;
+  max-width: 52ch;
+}
 .section__intro {
   font-size: clamp(1.05rem, 3vw, 1.25rem);
   font-weight: 300;
@@ -295,7 +320,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   margin-bottom: clamp(2rem, 5vw, 3rem);
 }
 
-/* ── Prose (Parcours) ──────────────────────────────── */
+/* ── Prose (Expérience) ────────────────────────────── */
 .prose { max-width: 60ch; display: flex; flex-direction: column; gap: 1.25rem; }
 .prose__lead {
   font-family: var(--ff-title);
@@ -305,6 +330,48 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   color: var(--conifere);
 }
 .prose__text { font-size: 1.05rem; font-weight: 300; }
+
+/* Prose with photo (Expérience) — mobile: stack, desktop: text | photo */
+.prose--with-media {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(1.5rem, 4vw, 2.5rem);
+  max-width: none;
+  align-items: start;
+}
+.prose__text-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.prose__linkedin {
+  display: inline-block;
+  margin-top: .5rem;
+  font-weight: 500;
+  color: var(--conifere);
+  border-bottom: 1px solid var(--framboise);
+  padding-bottom: 2px;
+  transition: color .2s, border-color .2s;
+  align-self: flex-start;
+}
+.prose__linkedin:hover {
+  color: var(--framboise);
+}
+.prose__media {
+  width: 100%;
+}
+.prose__photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  background: var(--lichen);  /* placeholder pendant que la photo manque */
+  border-radius: 2px;
+}
+@media (min-width: 768px) {
+  .prose--with-media {
+    grid-template-columns: 1.4fr 1fr;
+  }
+}
 
 /* ── Pillars (Valeurs) ─────────────────────────────── */
 .pillars {
